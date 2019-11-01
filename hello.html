@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>hello extension</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <!-- <div class="header">
+            <div class="innerWrapper">
+                <div class="col">
+                    <img src="./images/play-button.png" class="icon">
+                </div>
+                <div class="col large">
+                    <div class="time">12:27 PM</div>
+                    <div class="label">check in</div>
+                </div>
+            </div>
+        </div>
+        <div class="todoContainer">
+            <div class="taskBar">
+                <div class="taskCol selected">
+                    <img src="./images/pending.png" class="icon pending">
+                </div>
+                <div class="taskCol">
+                    <img src="./images/completed.png" class="icon completed">
+                </div>
+                <div class="taskCol">
+                    <img src="./images/clipboard.png" class="icon new">
+                </div>
+            </div>
+            <div class="tasks">
+
+                <div class="row">
+                    <div class="left">
+                        <div class="check"></div>
+                    </div>
+                    <div class="centre">
+                        <div class="title">instake</div>
+                        <div class="description"></div>
+                    </div>
+                    <div class="right">
+                        <div class="moreBtn">
+                            <img src="./images/more.png" class="moreIcon">
+                        </div>
+                        <div class="taskAction">
+                            <img src="./images/round-pause-button.png" class="actionBtn">
+                        </div>
+                        <div class="time">5 HR</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="left">
+                        <div class="check completed">
+                            <img src="./images//correct-symbol.png" class="completeCheck">
+                        </div>
+                    </div>
+                    <div class="centre">
+                        <div class="title">instake</div>
+                        <div class="description"></div>
+                    </div>
+                    <div class="right">
+                        <div class="moreBtn">
+                            <img src="./images/more.png" class="moreIcon">
+                        </div>
+                        <div class="taskAction">
+                            <img src="./images/round-pause-button.png" class="actionBtn">
+                        </div>
+                        <div class="time">5 HR</div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div> -->
+    </div>
+</body>
+
+
+<script type="text/x-jquery-tmpl" id="layout">
+    <div class="header">
+        <div class="innerWrapper">
+            <div class="col">
+                <img src="./images/play-button.png" class="icon">
+            </div>
+            <div class="col large">
+                <div class="time">12:27 PM</div>
+                <div class="label">check in</div>
+            </div>
+        </div>
+    </div>
+    <div class="todoContainer">
+        <div class="taskBar">
+            <div class="taskCol selected">
+                <img src="./images/pending.png" class="icon pending">
+            </div>
+            <div class="taskCol">
+                <img src="./images/completed.png" class="icon completed">
+            </div>
+            <div class="taskCol">
+                <img src="./images/clipboard.png" class="icon new">
+            </div>
+        </div>
+        <div class="tasks"></div>
+    </div>
+</script>
+
+<script type="text/x-jquery-tmpl" id="completedTask">
+    <div class="taskContainer">
+        <div class="row">
+            <div class="left">
+                <div class="check completed">
+                    <img src="./images//correct-symbol.png" class="completeCheck">
+                </div>
+            </div>
+            <div class="centre">
+                <div class="title">instake</div>
+                <div class="description"></div>
+            </div>
+            <div class="right">
+                <div class="moreBtn">
+                    <img src="./images/more.png" class="moreIcon">
+                </div>
+                <div class="taskAction">
+                    <img src="./images/round-pause-button.png" class="actionBtn">
+                </div>
+                <div class="time">5 HR</div>
+            </div>
+        </div>
+    </div>
+</script>
+
+
+<script type="text/x-jquery-tmpl" id="pendingTask">
+    <div class="taskContainer">
+        <div class="row">
+            <div class="left">
+                <div class="check"></div>
+            </div>
+            <div class="centre">
+                <div class="title">instake</div>
+                <div class="description"></div>
+            </div>
+            <div class="right">
+                <div class="moreBtn">
+                    <img src="./images/more.png" class="moreIcon">
+                </div>
+                <div class="taskAction">
+                    <img src="./images/round-pause-button.png" class="actionBtn">
+                </div>
+                <div class="time">5 HR</div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="text/x-jquery-tmpl" id="newTask">
+    <div class="taskContainer">
+        <input type="text" class="titleInput" placeholder="title">
+        <textarea class="descriptionArea"></textarea>
+        <div class="addBtn">add New</div>
+    </div>
+</script>
+
+<script type="text/javascript" src="./scripts/jquery-3.js"></script>
+<script type="text/javascript" src="./scripts/jquery.tmpl.min.js"></script>
+
+<script type="text/javascript" src="./screens/completeTask.js"></script>
+<script type="text/javascript" src="./screens/pendingTask.js"></script>
+<script type="text/javascript" src="./screens/newTask.js"></script>
+
+<script type="text/javascript" src="./JS/base.js"></script>
+<script type="text/javascript" src="./JS/index.js"></script>
+
+
+</html>
